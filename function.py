@@ -23,3 +23,9 @@ def calc (a,b, operasi):
         return a / b
     else:
         return "Operasi tidak valid"
+    
+print("=============== Calculator ===============")
+a = int(input("Masukkan angka pertama: "))
+b = int(input("Masukkan angka kedua: "))
+operasi = input("Masukkan operasi (+, -, *, /): ")
+result = calc(a, b, operasi)
