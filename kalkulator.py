@@ -1,6 +1,6 @@
 pi = 3.14 # nilai pi
 
-def bangun_2d(): # function untuk mempermudah dalam memilih kalkulator 2d
+def bangun_datar(): # function untuk mempermudah dalam memilih kalkulator 2d
     print("Pilih bangun datar:")
     print("1.Persegi")
     print("2.Segitiga")
@@ -36,7 +36,7 @@ def bangun_2d(): # function untuk mempermudah dalam memilih kalkulator 2d
     else: # tidak valid
         print("Pilihan tidak valid.")
 
-def bangun_3d(): # function untuk mempermudah dalam memilih kalkulator 3d
+def bangun_ruang(): # function untuk mempermudah dalam memilih kalkulator 3d
     print("Pilih bangun ruang:")
     print("1.Bola")
     print("2.Kubus")
@@ -79,8 +79,8 @@ print ("2. Kalkulator Bangun Ruang")
 pilihan = input("Silahkan Pilih: ")
 
 if pilihan == "1": # Memanggil fungsi kalkulator 2D
-    bangun_2d()
+    bangun_datar()
 elif pilihan == "2": # Memanggil fungsi kalkulator 3D
-    bangun_3d()
+    bangun_ruang()
 else: # tidak valid
     print("Pilihan tidak valid.")
