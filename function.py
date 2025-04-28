@@ -33,7 +33,10 @@ def calc(a, b, operasi):
     
     elif operasi == '/': # Jika operasi adalah pembagian
         print("Ini adalah pembagian")
-        return a / b
+        if b != 0:
+                return a / b
+        else :
+            return "Pembagian dengan nol tidak diperbolehkan"
     
     elif operasi == '%': # Jika operasi adalah modulus
         print("Ini adalah modulus")
