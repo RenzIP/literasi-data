@@ -1,7 +1,7 @@
-def pi ():
+def pi (): #membuat function pi
     return 3.14
 
-def kalkulator_2d():
+def kalkulator_2d(): # function untuk mempermudah dalam memilih kalkulator 2d
     print("Pilih bangun datar:")
     print("1. Persegi")
     print("2. Segitiga")
@@ -37,7 +37,7 @@ def kalkulator_2d():
     else: # tidak valid
         print("Pilihan tidak valid.")
 
-def kalkulator_3d():
+def kalkulator_3d(): # function untuk mempermudah dalam memilih kalkulator 3d
     print("Pilih bangun ruang:")
     print("1. Bola")
     print("2. Kubus")
