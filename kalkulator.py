@@ -35,6 +35,7 @@ def bangun_datar(): # function untuk mempermudah dalam memilih kalkulator 2d
         
     else: # tidak valid
         print("Pilihan tidak valid.")
+        return bangun_datar() ## mengembalikan ke fungsi bangun datar jika pilihan tidak valid
 
 def bangun_ruang(): # function untuk mempermudah dalam memilih kalkulator 3d
     print("Pilih bangun ruang:")
@@ -71,16 +72,22 @@ def bangun_ruang(): # function untuk mempermudah dalam memilih kalkulator 3d
         
     else: # tidak valid
         print("Pilihan tidak valid.")
+        return bangun_ruang() #mengembalikan ke fungsi bangun ruang jika pilihan tidak valid
 
-print ("=============== Kalkulator Bangun Datar dan Ruang ===============")
-print ("Silahan pilih jenis kalkulator:")
-print ("1. Kalkulator Bangun Datar")
-print ("2. Kalkulator Bangun Ruang")
-pilihan = input("Silahkan Pilih: ")
+def main():
+    print ("=============== Kalkulator Bangun Datar dan Ruang ===============")
+    print ("Silahan pilih jenis kalkulator:")
+    print ("1. Kalkulator Bangun Datar")
+    print ("2. Kalkulator Bangun Ruang")
+    pilihan = input("Silahkan Pilih: ")
 
-if pilihan == "1": # Memanggil fungsi kalkulator 2D
-    bangun_datar()
-elif pilihan == "2": # Memanggil fungsi kalkulator 3D
-    bangun_ruang()
-else: # tidak valid
-    print("Pilihan tidak valid.")
+    if pilihan == "1": # Memanggil fungsi kalkulator 2D
+        bangun_datar()
+    elif pilihan == "2": # Memanggil fungsi kalkulator 3D
+        bangun_ruang()
+    else: # tidak valid
+        print("Pilihan tidak valid.")
+    return main() # mengembalikan ke fungsi main jika pilihan tidak valid
+
+if __name__ == "__main__":
+    main()
