@@ -8,7 +8,7 @@ def kalkulator_2d(): # function untuk mempermudah dalam memilih kalkulator 2d
     print("3. Trapesium")
     print("4. Lingkaran")
     print("5. Persegi Panjang")
-    pilihan = input("Masukkan pilihan (1-5): ")
+    pilihan = input("Masukkan pilihan: ")
 
     if pilihan == "1": # Menghitung luas persegi
         sisi = float(input("Masukkan panjang sisi: "))
@@ -44,7 +44,7 @@ def kalkulator_3d(): # function untuk mempermudah dalam memilih kalkulator 3d
     print("3. Balok")
     print("4. Tabung")
     print("5. Kerucut")
-    pilihan = input("Masukkan pilihan (1-5): ")
+    pilihan = input("Masukkan pilihan: ")
 
     if pilihan == "1": # Menghitung volume bola
         jari_jari = float(input("Masukkan jari-jari: "))
