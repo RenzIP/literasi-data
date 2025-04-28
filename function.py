@@ -57,3 +57,6 @@ operasi = input("Masukkan operasi (+, -, *, /, %): ") # Meminta input operasi ya
 result = calc(a, b, operasi) # Menghitung hasil menggunakan fungsi calc
 
 print("Hasil:", result) # Menampilkan hasil perhitungan
+
+
+
