@@ -18,31 +18,39 @@ print(check_room(10))  # Output: Masuk ke ruangan C
 
 # Fungsi kalkulator sederhana untuk melakukan operasi aritmatika
 def calc(a, b, operasi):
-    # Jika operasi adalah penjumlahan
-    if operasi == '+':
+    
+    if operasi == '+': # Jika operasi adalah penjumlahan
+        print("Ini adalah penjumlahan")
         return a + b
-    # Jika operasi adalah pengurangan
-    elif operasi == '-':
+    
+    elif operasi == '-': # Jika operasi adalah pengurangan
+        print("Ini adalah pengurangan")
         return a - b
-    # Jika operasi adalah perkalian
-    elif operasi == '*':
+    
+    elif operasi == '*': # Jika operasi adalah perkalian
+        print("Ini adalah perkalian")
         return a * b
-    # Jika operasi adalah pembagian
-    elif operasi == '/':
+    
+    elif operasi == '/': # Jika operasi adalah pembagian
+        print("Ini adalah pembagian")
         return a / b
-    # Jika operasi tidak valid
-    else:
+    
+    elif operasi == '%': # Jika operasi adalah modulus
+        print("Ini adalah modulus")
+        return a % b
+    
+    else: # Jika operasi tidak valid
         return "Operasi tidak valid"
 
-# Program utama untuk menggunakan fungsi kalkulator
-print("=============== Calculator ===============")
-# Meminta input angka pertama dari pengguna
-a = int(input("Masukkan angka pertama: "))
-# Meminta input angka kedua dari pengguna
-b = int(input("Masukkan angka kedua: "))
-# Meminta input operasi yang diinginkan dari pengguna
-operasi = input("Masukkan operasi (+, -, *, /): ")
-# Menghitung hasil menggunakan fungsi calc
-result = calc(a, b, operasi)
-# Menampilkan hasil perhitungan
-print("Hasil:", result)
+
+print("=============== Calculator ===============") # Program utama untuk menggunakan fungsi kalkulator
+
+a = int(input("Masukkan angka pertama: ")) # Meminta input angka pertama dari pengguna
+
+b = int(input("Masukkan angka kedua: ")) # Meminta input angka kedua dari pengguna
+
+operasi = input("Masukkan operasi (+, -, *, /, %): ") # Meminta input operasi yang diinginkan dari pengguna
+
+result = calc(a, b, operasi) # Menghitung hasil menggunakan fungsi calc
+
+print("Hasil:", result) # Menampilkan hasil perhitungan
