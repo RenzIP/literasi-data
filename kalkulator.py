@@ -81,9 +81,9 @@ def main():
     print ("2. Kalkulator Bangun Ruang")
     pilihan = input("Silahkan Pilih: ")
 
-    if pilihan == "1": # Memanggil fungsi kalkulator 2D
+    if pilihan == "1": # Memanggil fungsi bangun datar
         bangun_datar()
-    elif pilihan == "2": # Memanggil fungsi kalkulator 3D
+    elif pilihan == "2": # Memanggil fungsi bangun ruang
         bangun_ruang()
     else: # tidak valid
         print("Pilihan tidak valid.")
