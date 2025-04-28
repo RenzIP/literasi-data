@@ -1,4 +1,5 @@
-import math
+def pi ():
+    return 3.14
 
 def kalkulator_2d():
     print("Pilih bangun datar:")
@@ -9,31 +10,31 @@ def kalkulator_2d():
     print("5. Persegi Panjang")
     pilihan = input("Masukkan pilihan (1-5): ")
 
-    if pilihan == "1":
+    if pilihan == "1": # Menghitung luas persegi
         sisi = float(input("Masukkan panjang sisi: "))
-        print(f"Luas Persegi: {sisi ** 2}")
+        print("Luas Persegi: ", sisi ** 2)
         
-    elif pilihan == "2":
+    elif pilihan == "2": # Menghitung luas bangun datar
         alas = float(input("Masukkan panjang alas: "))
         tinggi = float(input("Masukkan tinggi: "))
-        print(f"Luas Segitiga: {0.5 * alas * tinggi}")
+        print("Luas Segitiga: ",0.5 * alas * tinggi)
         
-    elif pilihan == "3":
+    elif pilihan == "3": # Menghitung luas trapesium
         sisi_atas = float(input("Masukkan panjang sisi atas: "))
         sisi_bawah = float(input("Masukkan panjang sisi bawah: "))
         tinggi = float(input("Masukkan tinggi: "))
-        print(f"Luas Trapesium: {0.5 * (sisi_atas + sisi_bawah) * tinggi}")
+        print("Luas Trapesium: ", 0.5 * (sisi_atas + sisi_bawah) * tinggi)
         
-    elif pilihan == "4":
+    elif pilihan == "4": # Menghitung luas linkaran
         jari_jari = float(input("Masukkan jari-jari: "))
-        print(f"Luas Lingkaran: {math.pi * jari_jari ** 2}")
+        print("Luas Lingkaran: ", pi * jari_jari ** 2)
         
-    elif pilihan == "5":
+    elif pilihan == "5": # Menghitung luas persegi panjang
         panjang = float(input("Masukkan panjang: "))
         lebar = float(input("Masukkan lebar: "))
-        print(f"Luas Persegi Panjang: {panjang * lebar}")
+        print("Luas Persegi Panjang: ", panjang * lebar)
         
-    else:
+    else: # tidak valid
         print("Pilihan tidak valid.")
 
 def kalkulator_3d():
@@ -45,42 +46,43 @@ def kalkulator_3d():
     print("5. Kerucut")
     pilihan = input("Masukkan pilihan (1-5): ")
 
-    if pilihan == "1":
+    if pilihan == "1": # Menghitung volume bola
         jari_jari = float(input("Masukkan jari-jari: "))
-        print(f"Volume Bola: {(4/3) * math.pi * jari_jari ** 3}")
+        print("Volume Bola: ", (4/3) * pi * jari_jari ** 3)
         
-    elif pilihan == "2":
+    elif pilihan == "2": # Menghitung volume kubus
         sisi = float(input("Masukkan panjang sisi: "))
-        print(f"Volume Kubus: {sisi ** 3}")
+        print("Volume Kubus: ", sisi ** 3)
         
-    elif pilihan == "3":
+    elif pilihan == "3": # Menghitung volume balok
         panjang = float(input("Masukkan panjang: "))
         lebar = float(input("Masukkan lebar: "))
         tinggi = float(input("Masukkan tinggi: "))
-        print(f"Volume Balok: {panjang * lebar * tinggi}")
+        print("Volume Balok: ", panjang * lebar * tinggi)
         
-    elif pilihan == "4":
+    elif pilihan == "4": # Menghitung volume tabung
         jari_jari = float(input("Masukkan jari-jari: "))
         tinggi = float(input("Masukkan tinggi: "))
-        print(f"Volume Tabung: {math.pi * jari_jari ** 2 * tinggi}")
+        print("Volume Tabung: ", pi * jari_jari ** 2 * tinggi)
         
-    elif pilihan == "5":
+    elif pilihan == "5": # Menghitung volume kerucut
         jari_jari = float(input("Masukkan jari-jari: "))
         tinggi = float(input("Masukkan tinggi: "))
-        print(f"Volume Kerucut: {(1/3) * math.pi * jari_jari ** 2 * tinggi}")
+        print("Volume Kerucut: ", (1/3) * pi * jari_jari ** 2 * tinggi)
         
-    else:
+    else: # tidak valid
         print("Pilihan tidak valid.")
 
 
-print("Kalkulator Bangun 2D dan 3D")
-print("1. Bangun Datar (2D)")
-print("2. Bangun Ruang (3D)")
-pilihan = input("Masukkan pilihan (1-2): ")
+print ("=============== Kalkulator Bangun Datar dan Ruang ===============")
+print ("Silahan pilih jenis kalkulator:")
+print ("1. Kalkulator 2D")
+print ("2. Kalkulator 3D")
+pilihan = input("Silahkan Pilih: ")
 
-if pilihan == "1":
+if pilihan == "1": # Memanggil fungsi kalkulator 2D
     kalkulator_2d()
-elif pilihan == "2":
+elif pilihan == "2": # Memanggil fungsi kalkulator 3D
     kalkulator_3d()
-else:
+else: # tidak valid
     print("Pilihan tidak valid.")
