@@ -1,5 +1,4 @@
-def pi (): #membuat function pi
-    return 3.14
+pi = 3.14 # nilai pi
 
 def kalkulator_2d(): # function untuk mempermudah dalam memilih kalkulator 2d
     print("Pilih bangun datar:")
