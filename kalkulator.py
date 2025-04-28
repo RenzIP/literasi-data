@@ -1,6 +1,6 @@
 pi = 3.14 # nilai pi
 
-def kalkulator_2d(): # function untuk mempermudah dalam memilih kalkulator 2d
+def bangun_2d(): # function untuk mempermudah dalam memilih kalkulator 2d
     print("Pilih bangun datar:")
     print("1. Persegi")
     print("2. Segitiga")
@@ -13,7 +13,7 @@ def kalkulator_2d(): # function untuk mempermudah dalam memilih kalkulator 2d
         sisi = float(input("Masukkan panjang sisi: "))
         print("Luas Persegi: ", sisi ** 2)
         
-    elif pilihan == "2": # Menghitung luas bangun datar
+    elif pilihan == "2": # Menghitung luas segitiga
         alas = float(input("Masukkan panjang alas: "))
         tinggi = float(input("Masukkan tinggi: "))
         print("Luas Segitiga: ",0.5 * alas * tinggi)
@@ -24,7 +24,7 @@ def kalkulator_2d(): # function untuk mempermudah dalam memilih kalkulator 2d
         tinggi = float(input("Masukkan tinggi: "))
         print("Luas Trapesium: ", 0.5 * (sisi_atas + sisi_bawah) * tinggi)
         
-    elif pilihan == "4": # Menghitung luas linkaran
+    elif pilihan == "4": # Menghitung luas jari- jari linkaran
         jari_jari = float(input("Masukkan jari-jari: "))
         print("Luas Lingkaran: ", pi * jari_jari ** 2)
         
@@ -36,7 +36,7 @@ def kalkulator_2d(): # function untuk mempermudah dalam memilih kalkulator 2d
     else: # tidak valid
         print("Pilihan tidak valid.")
 
-def kalkulator_3d(): # function untuk mempermudah dalam memilih kalkulator 3d
+def bangun_3d(): # function untuk mempermudah dalam memilih kalkulator 3d
     print("Pilih bangun ruang:")
     print("1. Bola")
     print("2. Kubus")
@@ -75,13 +75,13 @@ def kalkulator_3d(): # function untuk mempermudah dalam memilih kalkulator 3d
 
 print ("=============== Kalkulator Bangun Datar dan Ruang ===============")
 print ("Silahan pilih jenis kalkulator:")
-print ("1. Kalkulator 2D")
-print ("2. Kalkulator 3D")
+print ("1. Kalkulator Bangun Datar")
+print ("2. Kalkulator Bangun Ruang")
 pilihan = input("Silahkan Pilih: ")
 
 if pilihan == "1": # Memanggil fungsi kalkulator 2D
-    kalkulator_2d()
+    bangun_2d()
 elif pilihan == "2": # Memanggil fungsi kalkulator 3D
-    kalkulator_3d()
+    bangun_3d()
 else: # tidak valid
     print("Pilihan tidak valid.")
