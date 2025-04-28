@@ -2,11 +2,11 @@ pi = 3.14 # nilai pi
 
 def bangun_2d(): # function untuk mempermudah dalam memilih kalkulator 2d
     print("Pilih bangun datar:")
-    print("1. Persegi")
-    print("2. Segitiga")
-    print("3. Trapesium")
-    print("4. Lingkaran")
-    print("5. Persegi Panjang")
+    print("1.Persegi")
+    print("2.Segitiga")
+    print("3.Trapesium")
+    print("4.Lingkaran")
+    print("5.Persegi Panjang")
     pilihan = input("Silahkan di pilih: ")
 
     if pilihan == "1": # Menghitung luas persegi
@@ -38,11 +38,11 @@ def bangun_2d(): # function untuk mempermudah dalam memilih kalkulator 2d
 
 def bangun_3d(): # function untuk mempermudah dalam memilih kalkulator 3d
     print("Pilih bangun ruang:")
-    print("1. Bola")
-    print("2. Kubus")
-    print("3. Balok")
-    print("4. Tabung")
-    print("5. Kerucut")
+    print("1.Bola")
+    print("2.Kubus")
+    print("3.Balok")
+    print("4.Tabung")
+    print("5.Kerucut")
     pilihan = input("Silahkan di Pilih: ")
 
     if pilihan == "1": # Menghitung volume bola
