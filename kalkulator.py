@@ -16,7 +16,7 @@ def bangun_2d(): # function untuk mempermudah dalam memilih kalkulator 2d
     elif pilihan == "2": # Menghitung luas segitiga
         alas = int(input("Masukkan panjang alas: "))
         tinggi = int(input("Masukkan tinggi: "))
-        print("Luas Segitiga: ",0.5 * alas * tinggi)
+        print("Luas Segitiga: ", 0.5 * alas * tinggi)
         
     elif pilihan == "3": # Menghitung luas trapesium
         sisi_atas = int(input("Masukkan panjang sisi atas: "))
