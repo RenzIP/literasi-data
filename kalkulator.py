@@ -72,7 +72,6 @@ def bangun_3d(): # function untuk mempermudah dalam memilih kalkulator 3d
     else: # tidak valid
         print("Pilihan tidak valid.")
 
-
 print ("=============== Kalkulator Bangun Datar dan Ruang ===============")
 print ("Silahan pilih jenis kalkulator:")
 print ("1. Kalkulator Bangun Datar")
