@@ -1,4 +1,4 @@
-import pyautogui
+import pyautogui # pip install pyautogui
 import threading
 import time
 import keyboard  # pip install keyboard
