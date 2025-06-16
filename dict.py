@@ -12,4 +12,4 @@ data_mhs["nama"] = "bagas"
 data_mhs["kelas"] = "d4 ti"
 data_mhs["asal"] = "bekasi"
 
-print(data_mhs["nama"])
+print(data_mhs["kelas"])

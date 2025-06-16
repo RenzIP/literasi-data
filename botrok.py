@@ -3,7 +3,16 @@ import time
 import pyautogui
 import keyboard
 import threading
+import pygetwindow as gw
 from pynput import mouse
+
+windows = gw.getWindowsWithTitle("Rise of Kingdoms")
+if windows:
+    win = windows[0]
+    win.activate()  # Pastikan game window aktif dan focus
+    print("Window game diaktifkan!")
+else:
+    print("Window game tidak ditemukan, cek nama window-nya.")
 
 recording = []
 is_recording = False
@@ -19,7 +28,7 @@ def on_move(x, y):
     if is_recording:
         timestamp = time.time()
         recording.append({'type': 'move', 'x': x, 'y': y, 'time': timestamp})
-
+7
 def record_mouse():
     global is_recording, recording
     recording.clear()
