@@ -18,3 +18,8 @@ data_mhs = {
 print(data_mhs)
 data_mhs_df = pd.DataFrame(data_mhs)
 print(data_mhs_df)
+print(data_mhs_df.head())
+print(data_mhs_df.tail())
+print(data_mhs_df.info())
+print(data_mhs_df.describe())
+print(data_mhs_df[['nama']])  # Mengambil kolom 'nama' dan 'umur'
