@@ -53,4 +53,4 @@ import pandas as pd
 # print (data['TempHighF'])
 
 data_pomokit = pd.read_json('pomokit.json')
-print(data_pomokit['name'])
+print(data_pomokit)
